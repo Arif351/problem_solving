@@ -1,4 +1,3 @@
-
 // 1. Leap Year
 const leapYear = (year) => {
     if ((year % 400 === 0 || year % 4 === 0) && (year % 100 !== 0)) {
@@ -23,24 +22,29 @@ const countVowels = sentences => {
     });
     return count;
 }
-console.log(countVowels("Hi, I am Ariful Islam, a Full Stack Web Developer. I love to work with React js, Javascript, MongoDB, Express js, Node, Tailwind CSS, Bootstrap, React Bootstrap, and modern HTML. I have already done some projects about services, teaching, review, etc. I love to explore new technologies and work with them. I can work under pressure."));
+console.log(countVowels("Hi, I am Ariful Islam, a Full Stack Web Developer."));
+
+
+//  3. Find duplicate and unique numbers from array
+// duplicate
+const numbers = [1, 2, 3, 4, 2, 8, 4, 3, 9, 4, 5, 2, 6, 3, 4, 3, 4, 3, 3, 5, 4]
+
+const duplicates = numbers.filter((duplicateNumber, index, array) => {
+    return array.indexOf(duplicateNumber) !== index
+})
+console.log(duplicates);
+
+// unique
+const uniqueNumbers = numbers.filter((uniqueNumber, i, array) => {
+    return array.indexOf(uniqueNumber) === i;
+})
+console.log(uniqueNumbers);
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+// ---------------------------------------------------------------
 
 // function timesTwo(params) { return params * 2 } function timesTwo(params) {
 //     return params * 2

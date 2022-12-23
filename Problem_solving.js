@@ -41,6 +41,47 @@ const uniqueNumbers = numbers.filter((uniqueNumber, i, array) => {
 console.log(uniqueNumbers);
 
 
+// 4. find random number
+
+// const min = 2;
+// const max = 8;
+const getRandomNumbers = (min, max) => {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+console.log(getRandomNumbers(1, 9));
+
+
+// 5. classification name with Alpabetic letter
+
+const studentsName = ["Samir", "Arif", "Babar", "Tamim", "Kamal", "Choton", "Galib", "Yamin"]
+console.log(studentsName.sort());
+
+
+// 6. Classification Number with serial
+
+const rollNumbers = [2, 4, 1, 6, 3, 6, 9, 5, 8, 7]
+
+console.log(rollNumbers.sort(function (a, b) {
+    // [for ascending]
+    return a - b;
+
+    // [for decending]
+    // return b - a;
+}));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
